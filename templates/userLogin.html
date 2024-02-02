@@ -1,0 +1,11 @@
+<h1>login</h1>
+<form method="POST">
+    {% csrf_token %}
+    Username:{{form.username}}
+    <br><br>
+    Password:{{form.password}}
+    <br><br>
+    <button type="submit">login</button>
+    <br><br>
+    <a href="{% url 'register' %}">Create Account.</a>
+</form>
